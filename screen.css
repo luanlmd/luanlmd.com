@@ -1,0 +1,59 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small,  strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:1.3em;
+}
+body {
+	line-height: 1;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+section, article, aside, header, footer, nav, dialog, figure {
+	display:block;
+}
+
+h1 { font-size:26px; }
+h2 { font-size:18px; }
+h3 { font-size:14px; }
+h1, h2 { margin:10px 0; }
+
+a { text-decoration:none; color:#0000DD; }
+a:hover { text-decoration:underline; }
+/*a[href ^="http://"]
+{
+	background: url("images/external.png") center right no-repeat;
+	padding: 0 13px 0 0;
+}
+*/
+
+ul { list-style:none; }
+
+#wrapper
+{
+	width:960px;
+	margin:0 auto;
+}
+
+#blog { width:600px; float:left; margin-bottom:20px; }
+
+#contact { float:right; width:340px; }
+#contact label {  display:block; }
+#contact label input, #contact label textarea {  display:block; margin:5px 0 10px 0; }
+#contact label input[type=text] { width:200px; }
+#contact label textarea { width:340px; height:80px; }
+
+#links { float:right; width:340px; }
+
+#twitter { float:right; width:340px; }
+#twitter ul li { display:block; margin:5px 0; background:#F0F0F0; border-bottom:1px solid #ccc; padding:5px; }
+
+#shared { clear:both; }
+
+footer { background:#F0F0F0; margin-top:10px; padding:10px; height:20px; text-align:center; }
+footer ul li { display:inline; margin:0 10px; }
