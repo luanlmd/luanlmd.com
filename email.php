@@ -37,8 +37,8 @@ class Message
 			if (strlen($body) < 2) { echo new Message(-1, "Preencha o campo Mensagem", "body"); die(); }
 
 			$headers = "From: {$name}<$email>\r\n";
-						
-			if(mail("luanlmd@gmail.com",$subject, $body ,$headers)) { echo new Message(1, "Mensagem enviada com sucesso!"); }
+			
+			if(mail("luanlmd@gmail.com","Contato", $body ,$headers)) { echo new Message(1, "Mensagem enviada com sucesso!"); }
 			else { echo new Message(-1, "Ocorreu um erro ao tentar enviar sua mensagem,\n por favor tente novamente mais tarde."); }
 		}
 	}
