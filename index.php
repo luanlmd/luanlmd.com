@@ -64,11 +64,11 @@ function twitter()
 				</form>
 			</section>
 			<section id="links">
-				<h2>Links</h2>
+				<h2>Find me on my</h2>
 				<ul>
 					<li><a href="http://luanlmd.wordpress.com">Blog</a></li>
+					<li><a href="http://github.com/luanlmd">GitHub</a></li>
 					<li><a href="http://twitter.com/luanlmd">Twitter</a></li>
-					<li><a href="http://migre.me/80zh">Curriculo</a></li>
 				</ul>
 			</section>
 			<section id="twitter">
