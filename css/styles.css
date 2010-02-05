@@ -1,0 +1,89 @@
+/* Definicoes Default */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small,  strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+body {
+	line-height: 1;
+	background:#1e2528;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+section, article, aside, header, footer, nav, dialog, figure {
+	display:block;
+}
+
+h1 { font-size:26px; }
+h2 { font-size:18px; }
+h3 { font-size:14px; }
+
+a { text-decoration:none; color:#0000DD; }
+a:hover { text-decoration:underline; }
+/*a[href ^="http://"]
+{
+	background: url("images/external.png") center right no-repeat;
+	padding: 0 13px 0 0;
+}
+*/
+
+ul { list-style:none; }
+
+/* Fim Definicoes Default */
+
+#top
+{
+	height:155px;
+	background:url("images/bg_top.png");
+}
+
+#top h1
+{
+	width:184px;
+	height:76px;
+	margin-top:40px;
+	text-indent:-1000000px;
+	background:url("images/logo.png") no-repeat;
+}
+
+#top #links ul{ margin-top:123px; }
+
+#top #links ul li a
+{
+	font-weight:bold;
+	font-size:10px;
+	color:white;
+	height:12px;
+}
+
+#top #links ul li
+{
+	display:inline-block;
+}
+
+#top #links ul li #blog
+{ 
+	display:block;
+	background:url("images/bg_blog.png") no-repeat; 
+	width:25px; 
+	padding:10px 17px;
+}
+
+#top #links ul li #twitter
+{ 
+	background:url("images/bg_twitter.png") no-repeat;
+}
+
+#top #links ul li #curriculo
+{ 
+	background:url("images/bg_curriculo.png") no-repeat;
+}
+
+
+
+
