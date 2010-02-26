@@ -9,7 +9,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 }
 body {
 	line-height: 1;
-	background:#1e2528;
+	background:#313F44;
 }
 table {
 	border-collapse: collapse;
@@ -42,6 +42,12 @@ ul { list-style:none; }
 	background:url("images/bg_top.png");
 }
 
+#top .wrapper
+{
+	display:block;
+	width:960px;
+}
+
 #top h1
 {
 	width:184px;
@@ -51,7 +57,7 @@ ul { list-style:none; }
 	background:url("images/logo.png") no-repeat;
 }
 
-#top #links ul{ margin-top:123px; }
+#top #links ul { margin-top:126px; }
 
 #top #links ul li a
 {
@@ -66,24 +72,147 @@ ul { list-style:none; }
 	display:inline-block;
 }
 
-#top #links ul li #blog
+#top #links ul li a
 { 
 	display:block;
-	background:url("images/bg_blog.png") no-repeat; 
-	width:25px; 
-	padding:10px 17px;
+	background:#6A6A6A;
+	border:1px solid #6D6D6D;
+	font-size:13px;
+	border-bottom: none;
+	-moz-border-radius:5px 5px 0 0;
+	-webkit-border-radius:5px 5px 0 0;
+	padding:8px 15px;
 }
 
-#top #links ul li #twitter
-{ 
-	background:url("images/bg_twitter.png") no-repeat;
+#blog
+{
+	float:left;
+    width:590px;
+	margin-bottom:30px;
+	margin-top:20px;
 }
 
-#top #links ul li #curriculo
-{ 
-	background:url("images/bg_curriculo.png") no-repeat;
+article
+{
+    padding:0 10px 8px 10px;
+    border:2px solid #313F44;
+	margin-bottom: 10px;
 }
 
+article h2
+{
+    color:#33CCFF;
+    display:block;
+    padding:5px 0;
+}
 
+article p, #twitter
+{
+    color:#EBEBEB;
+}
 
+article:hover
+{
+    background:#2e3a3f;
+    border:2px solid #273135;
+    text-decoration:none;
+}
 
+#contact, #twitter
+{
+	float:right;
+	margin-bottom:30px;
+}
+
+#contact
+{
+	width:350px;
+	margin-top:20px;
+}
+
+#contact h2
+{
+	font-size:30px;
+	color:white;
+}
+
+#contact label
+{
+	color:white;
+	display:block;
+	margin-top:15px;
+	font-size:15px;
+}
+
+#contact input:not([type=hidden]), #contact textarea
+{
+	width:340px;
+	margin-top:5px;
+	display:block;
+	border:2px solid #263034;
+	background:#2A3438;
+	color:#6E7275;
+	font-size:15px;
+	padding:5px;
+}
+
+#contact input[type=button]
+{
+	padding:5px;
+	width:auto;
+	background:#177797;
+	border:solid 2px #0F4556;
+	color:white;
+	float:right;
+}
+
+#twitter
+{
+	background:#222D31;
+	width:330px;
+	padding:10px;
+}
+
+#twitter h2
+{
+	display:block;
+	background:url('images/twitter.png');
+	text-indent: -10000px;
+	margin-top:-40px;
+	width:187px;
+	height:82px;
+}
+
+#twitter li
+{
+	margin:10px 0;
+}
+
+#twitter a
+{
+	color:#33CCFF;
+}
+
+#twitter a:hover
+{
+	text-decoration: underline;
+}
+
+#shared 
+{
+	clear:both;
+	background:#1e2528;
+}
+
+#shared div
+{
+	background:url(images/rss.png) 10px 10px no-repeat;
+	padding:10px 60px;
+}
+
+#shared a
+{
+    color:#f3f3f3;
+    display:block;
+    padding:5px 0;
+}
