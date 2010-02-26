@@ -77,7 +77,6 @@ function github()
 					<input type="button" value="Enviar" />
 				</form>
 			</section>
-			
 			<section id="twitter">
 				<a href="http://twitter.com/luanlmd"><h2>Twitter</h2></a>
 				<ul>
