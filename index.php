@@ -90,7 +90,7 @@ for($x = 0; $x < 14; $x++)
         $t = ereg_replace("@([a-zA-Z0-9_]+)", " <a rel=\"nofollow\" href=\"http://twitter.com/\\1\">@\\1</a> ", $t);
         $t = ereg_replace(" #([^ ]+)", " <a rel=\"nofollow\" href=\"http://search.twitter.com/search?q=%23\\1\">#\\1</a> ", $t);
 ?>                                      
-					<li><?= $t ?></li>
+					<li><p><?= $t ?></p></li>
 <? } } ?>
 				</ul>
 			</section>

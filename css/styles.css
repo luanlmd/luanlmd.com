@@ -20,11 +20,13 @@ section, article, aside, header, footer, nav, dialog, figure {
 }
 
 h1 { font-size:26px; }
-h2 { font-size:18px; }
+h2 { font-size:18px; font-family:Georgia; }
 h3 { font-size:14px; }
 
 a { text-decoration:none; color:#0000DD; }
 a:hover { text-decoration:underline; }
+
+p { line-height: 15px; }
 /*a[href ^="http://"]
 {
 	background: url("images/external.png") center right no-repeat;
@@ -146,7 +148,7 @@ article:hover
 
 #contact input:not([type=hidden]), #contact textarea
 {
-	width:340px;
+	width:336px;
 	margin-top:5px;
 	display:block;
 	border:2px solid #263034;
