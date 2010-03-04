@@ -33,11 +33,12 @@ function github()
 		<header id="top">
 			<div class="container_24">
 				<h1 class="grid_24 push_1">Luan Almeida</h1>
-				<section id="links" class="push_12 grid_7">
+				<section id="links">
 					<ul class="">
 						<li><a href="http://luanlmd.wordpress.com">Blog</a></li>
 						<li><a href="http://twitter.com/luanlmd">Twitter</a></li>
 						<li><a href="http://github.com/luanlmd">GitHub</a></li>
+						<li><a href="http://sb.luanlmd.com">Sandbox</a></li>
 					</ul>
 				</section>
 			</div>
