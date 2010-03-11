@@ -30,6 +30,7 @@ function github()
 		<script src="js/scripts.js" type="text/javascript"></script>
 	</head>
 	<body>
+		<script src="http://imasters.uol.com.br/crossbrowser/fonte.js" type="text/javascript"></script>
 		<header id="top">
 			<div class="container_24">
 				<h1 class="grid_24 push_1">Luan Almeida</h1>
