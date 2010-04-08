@@ -81,8 +81,7 @@ ul { list-style:none; }
 	border:1px solid #6D6D6D;
 	font-size:13px;
 	border-bottom: none;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
+	border-radius:5px;
 	padding:8px 15px;
 }
 
