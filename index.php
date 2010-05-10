@@ -60,20 +60,17 @@ function github()
 				<form method="post" action="email.php">
 					<p>
 						<label>
-							Nome:
-							<input name="name" />
+							<input name="name" title="Seu nome" placeholder="nome" />
 						</label>
 					</p>
 					<p>
 						<label>
-							E-mail:
-							<input name="email" />
+							<input name="email" title="Seu e-mail" placeholder="e-mail" />
 						</label>
 					</p>
 					<p>
 						<label>
-							Mensagem:
-							<textarea name="body" rows="5"></textarea>
+							<textarea name="body" rows="5" title="Digite aqui sua mensagem para mim"  placeholder="mensagem"></textarea>
 						</label>
 					</p>
 					<input type="button" value="Enviar" />

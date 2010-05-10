@@ -147,6 +147,7 @@ article:hover
 
 #contact input:not([type=hidden]), #contact textarea
 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
 	width:336px;
 	margin-top:5px;
 	display:block;
