@@ -167,13 +167,17 @@ ul { list-style:none; }
 	border:solid 2px #0F4556;
 	color:white;
 	float:right;
+	border-radius:5px;
 }
+
+#twitter, #github { border-radius:10px; }
 
 #twitter
 {
 	background:#222D31;
 	margin-top:35px;
 }
+
 #twitter div.wrap
 {
 	padding:10px;
@@ -218,7 +222,7 @@ ul { list-style:none; }
 	overflow:hidden;
 	background:url('images/github.png');
 	text-indent: -10000px;
-	margin-top:-80px;
+	margin-top:-75px;
 	width:100px;
 	height:100px;
 	margin-bottom:10px;
