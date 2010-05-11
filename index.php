@@ -11,6 +11,8 @@ function reader()
 }
 function twitter()
 {
+	$ts = json_decode(file_get_contents("/tmp/luanlmd.twitter.json"));
+	return $ts;
 }
 function github()
 {
@@ -35,7 +37,7 @@ function github()
 			<div class="container_24">
 				<h1 class="grid_24 push_1">Luan Almeida</h1>
 				<section id="links">
-					<ul class="">
+					<ul>
 						<li><a href="http://luanlmd.wordpress.com">Blog</a></li>
 						<li><a href="http://twitter.com/luanlmd">Twitter</a></li>
 						<li><a href="http://github.com/luanlmd">GitHub</a></li>
@@ -45,17 +47,21 @@ function github()
 			</div>
 		</header>
 		<div class="container_24">
-			<section id="blog">
+			<section id="blog" class="grid_15">
+				<ul>
 <? foreach (blog() as $i) { ?>
-				<article>
-				    <a href="<?= $i->link ?>">
-					<h2><?= $i->title ?></h2>
-					<p><?= $i->description ?></p>
-				    </a>
-				</article>
+					<li>
+						<a href="<?= $i->link ?>">
+						<h2><?= $i->title ?></h2>
+						<p><?= $i->description ?></p>
+						</a>
+					</li>
 <? } ?>
+				</ul>
 			</section>
-			<section id="contact">
+			<div class="container_9">
+			<section id="contact" class="grid_9">
+				
 				<h2>Email-me</h2>
 				<form method="post" action="email.php">
 					<p>
@@ -75,13 +81,15 @@ function github()
 					</p>
 					<input type="button" value="Enviar" />
 				</form>
+				
 			</section>
-			<section id="twitter">
-				<a href="http://twitter.com/luanlmd"><h2>Twitter</h2></a>
-				<ul>
+			<section id="twitter" class="grid_9">
+				<div class="wrap">
+					<a href="http://twitter.com/luanlmd"><h2>Twitter</h2></a>
+					<ul>
 <?
-$ts = json_decode(file_get_contents("/tmp/luanlmd.twitter.json"));
-for($x = 0; $x < 14; $x++)
+$ts = twitter();
+for($x = 0; $x < 5; $x++)
 {                       
         $t = htmlspecialchars($ts[$x]->text);
         if($t{0} != "@") {      
@@ -91,19 +99,36 @@ for($x = 0; $x < 14; $x++)
 ?>                                      
 					<li><p><?= $t ?></p></li>
 <? } } ?>
-				</ul>
+						</div>
+					</ul>
+				</section>
+				<section id="github" class="grid_9">
+					<div class="wrap">
+						<a href="http://github.com/luanlmd"><h2>GitHub</h2></a>
+						<ul>
+<? $x = 0; foreach (github() as $i) { $attr = $i->link->attributes(); $x++; if ($x < 5) { ?>
+						<li>
+							<a href="<?= $attr["href"] ?>"><?= $i->title ?></a>
+							<div>
+								<?= $i->content ?></a>
+							</div>
+						</li>
+<? } } ?>
+					</ul>
+				</div>
 			</section>
+			</div>
 		</div>
 		<section id="shared">
 			<div class="container_24">
-			<a href="http://www.google.com/reader/shared/luanlmd"><h2>Feeds Compartilhados</h2></a>
-			<ul>
+					<a href="http://www.google.com/reader/shared/luanlmd"><h2>Feeds Compartilhados</h2></a>
+					<ul>
 <? $x = 0; foreach (reader() as $i) { $attr = $i->link->attributes(); $x++; if ($x < 15) { ?>
-				<li>
-					<a href="<?= $attr["href"] ?>"><?= $i->title ?></a>
-				</li>
-<? } } ?>
-			</ul>
+						<li>
+							<a href="<?= $attr["href"] ?>"><?= $i->title ?></a>
+						</li>
+	<? } } ?>
+					</ul>
 			</div>
 		</section>
 <?php if ($_SERVER["HTTP_HOST"] == "luanlmd.com") { ?>
@@ -118,5 +143,8 @@ for($x = 0; $x < 14; $x++)
 			} catch(err) {}
 		</script>
 <?php } ?>
+		<footer class="container_24">
+			<p>O código deste site está disponível em: <a href="http://github.com/luanlmd/luanlmd.com">http://github.com/luanlmd/luanlmd.com</a></p>
+		</footer>
 	</body>
 </html>

@@ -23,8 +23,8 @@ h1 { font-size:26px; }
 h2 { font-size:18px; font-family:Georgia; }
 h3 { font-size:14px; }
 
-a { text-decoration:none; color:#0000DD; }
-a:hover { text-decoration:underline; }
+a { text-decoration:none; color:#AAA; }
+a:hover { text-decoration:underline; color:#33CCFF; }
 
 p { line-height: 15px; }
 /*a[href ^="http://"]
@@ -87,47 +87,48 @@ ul { list-style:none; }
 
 #blog
 {
-	float:left;
-    width:590px;
 	margin-bottom:30px;
 	margin-top:20px;
 }
 
-article
+#blog li
 {
     padding:0 10px 8px 10px;
     border:2px solid #313F44;
 	margin-bottom: 10px;
 }
 
-article h2
+#blog li h2
 {
     color:#33CCFF;
     display:block;
     padding:5px 0;
 }
 
-article p, #twitter
+#blog li p, #twitter
 {
     color:#EBEBEB;
 }
 
-article:hover
+#blog li a:hover
+{
+	text-decoration:none;
+}
+
+#blog li:hover
 {
     background:#2e3a3f;
     border:2px solid #273135;
     text-decoration:none;
 }
 
-#contact, #twitter
+#contact, #twitter, #github
 {
-	float:right;
 	margin-bottom:30px;
 }
 
 #contact
 {
-	width:350px;
 	margin-top:20px;
 }
 
@@ -171,7 +172,9 @@ article:hover
 #twitter
 {
 	background:#222D31;
-	width:330px;
+}
+#twitter div.wrap
+{
 	padding:10px;
 }
 
@@ -195,26 +198,66 @@ article:hover
 	color:#33CCFF;
 }
 
-#twitter a:hover
+#github
 {
-	text-decoration: underline;
+	background:#222D31;
+	color:white;
+	margin-top:50px;
+}
+
+#github div.wrap
+{
+	padding:10px;
+}
+
+#github h2
+{
+	display:block;
+	background:url('images/github.png');
+	text-indent: -10000px;
+	margin-top:-80px;
+	width:100px;
+	height:100px;
+	margin-bottom:10px;
+}
+
+#github a
+{
+	color:#33CCFF;
+}
+
+#github .details, #github .message
+{
+	padding:5px 15px;
 }
 
 #shared 
 {
 	clear:both;
 	background:#1e2528;
+	padding:10px 0;
 }
 
-#shared div
+#shared h2
 {
+	color:#f3f3f3;
 	background:url(images/rss.png) 10px 10px no-repeat;
-	padding:10px 60px;
+	display:block;
+	line-height:60px;
+	padding-left:60px;
 }
 
-#shared a
+#shared li a
 {
-    color:#f3f3f3;
     display:block;
     padding:5px 0;
+    margin-left:60px;
+}
+
+footer p
+{
+	color:white;
+	display:block;
+	float:right;
+	line-height:45px;
 }
