@@ -172,6 +172,7 @@ ul { list-style:none; }
 #twitter
 {
 	background:#222D31;
+	margin-top:35px;
 }
 #twitter div.wrap
 {
@@ -181,11 +182,12 @@ ul { list-style:none; }
 #twitter h2
 {
 	display:block;
+	overflow:hidden;
 	background:url('images/twitter.png');
 	text-indent: -10000px;
-	margin-top:-40px;
-	width:187px;
-	height:82px;
+	margin-top:-80px;
+	width:100px;
+	height:100px;
 }
 
 #twitter li
@@ -213,6 +215,7 @@ ul { list-style:none; }
 #github h2
 {
 	display:block;
+	overflow:hidden;
 	background:url('images/github.png');
 	text-indent: -10000px;
 	margin-top:-80px;
@@ -249,8 +252,8 @@ ul { list-style:none; }
 
 #shared li a
 {
-    display:block;
     padding:5px 0;
+    line-height:18px;
     margin-left:60px;
 }
 
