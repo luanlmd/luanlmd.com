@@ -110,7 +110,7 @@ for($x = 0; $x < 5; $x++)
 						<li>
 							<a href="<?= $attr["href"] ?>"><?= $i->title ?></a>
 							<div>
-								<?= $i->content ?></a>
+								<?= $i->content ?>
 							</div>
 						</li>
 <? } } ?>
