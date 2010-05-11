@@ -60,33 +60,33 @@ function github()
 				</ul>
 			</section>
 			<div class="container_9">
-			<section id="contact" class="grid_9">
+				<section id="contact" class="grid_9">
 				
-				<h2>Email-me</h2>
-				<form method="post" action="email.php">
-					<p>
-						<label>
-							<input name="name" title="Seu nome" placeholder="nome" />
-						</label>
-					</p>
-					<p>
-						<label>
-							<input name="email" title="Seu e-mail" placeholder="e-mail" />
-						</label>
-					</p>
-					<p>
-						<label>
-							<textarea name="body" rows="5" title="Digite aqui sua mensagem para mim"  placeholder="mensagem"></textarea>
-						</label>
-					</p>
-					<input type="button" value="Enviar" />
-				</form>
+					<h2>Email-me</h2>
+					<form method="post" action="email.php">
+						<p>
+							<label>
+								<input name="name" title="Seu nome" placeholder="nome" />
+							</label>
+						</p>
+						<p>
+							<label>
+								<input name="email" title="Seu e-mail" placeholder="e-mail" />
+							</label>
+						</p>
+						<p>
+							<label>
+								<textarea name="body" rows="5" title="Digite aqui sua mensagem para mim"  placeholder="mensagem"></textarea>
+							</label>
+						</p>
+						<input type="button" value="Enviar" />
+					</form>
 				
-			</section>
-			<section id="twitter" class="grid_9">
-				<div class="wrap">
-					<a href="http://twitter.com/luanlmd"><h2>Twitter</h2></a>
-					<ul>
+				</section>
+				<section id="twitter" class="grid_9">
+					<div class="wrap">
+						<a href="http://twitter.com/luanlmd"><h2>Twitter</h2></a>
+						<ul>
 <?
 $ts = twitter();
 for($x = 0; $x < 5; $x++)
@@ -97,10 +97,12 @@ for($x = 0; $x < 5; $x++)
         $t = ereg_replace("@([a-zA-Z0-9_]+)", " <a rel=\"nofollow\" href=\"http://twitter.com/\\1\">@\\1</a> ", $t);
         $t = ereg_replace(" #([^ ]+)", " <a rel=\"nofollow\" href=\"http://search.twitter.com/search?q=%23\\1\">#\\1</a> ", $t);
 ?>                                      
-					<li><p><?= $t ?></p></li>
+					<li>
+						<p><?= $t ?></p>
+					</li>
 <? } } ?>
-						</div>
-					</ul>
+						</ul>
+					</div>
 				</section>
 				<section id="github" class="grid_9">
 					<div class="wrap">
