@@ -146,7 +146,8 @@ for($x = 0; $x < 5; $x++)
 		</script>
 <?php } ?>
 		<footer class="container_24">
-			<p>O código deste site está disponível em: <a href="http://github.com/luanlmd/luanlmd.com">http://github.com/luanlmd/luanlmd.com</a></p>
+			<p>Site melhor visualizado em navegadores modernos. Favor não utilizar IEca.</p>
+			<p>Código disponível em: <a href="http://github.com/luanlmd/luanlmd.com">http://github.com/luanlmd/luanlmd.com</a></p>
 		</footer>
 	</body>
 </html>

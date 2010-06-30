@@ -261,10 +261,17 @@ ul { list-style:none; }
     margin-left:60px;
 }
 
+footer
+{
+	height:50px;
+	padding:10px;
+}
+
 footer p
 {
 	color:white;
 	display:block;
 	float:right;
-	line-height:45px;
+	line-height:25px;
+	clear:both;
 }
