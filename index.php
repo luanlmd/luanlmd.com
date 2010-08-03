@@ -133,8 +133,12 @@ for($x = 0; $x < 5; $x++)
 					</ul>
 			</div>
 		</section>
+		<footer class="container_24">
+			<p>Site melhor visualizado em navegadores modernos. Favor não utilizar IEca.</p>
+			<p>Código disponível em: <a href="http://github.com/luanlmd/luanlmd.com">http://github.com/luanlmd/luanlmd.com</a></p>
+		</footer>
 <?php if ($_SERVER["HTTP_HOST"] == "luanlmd.com") { ?>
-		<script type="text/javascript">
+		<script>
 			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 		</script>
@@ -144,10 +148,18 @@ for($x = 0; $x < 5; $x++)
 			pageTracker._trackPageview();
 			} catch(err) {}
 		</script>
+
+		<script>
+			var vglnk_api_key = "ede440244a807302329b32d9ba9492ad";
+			var vglnk_domain = (("https:" == document.location.protocol) ? "https://" : "http://") + "api.viglink.com";
+			document.write(unescape("%3Cscript src='" + vglnk_domain + "/api/vglnk.js?key=" + vglnk_api_key +
+		    "' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			try {
+				vglnk(vglnk_domain, vglnk_api_key);
+			} catch(err) {}
+		</script>
 <?php } ?>
-		<footer class="container_24">
-			<p>Site melhor visualizado em navegadores modernos. Favor não utilizar IEca.</p>
-			<p>Código disponível em: <a href="http://github.com/luanlmd/luanlmd.com">http://github.com/luanlmd/luanlmd.com</a></p>
-		</footer>
 	</body>
 </html>
