@@ -144,20 +144,8 @@ for($x = 0; $x < 5; $x++)
 		</script>
 		<script type="text/javascript">
 			try {
-			var pageTracker = _gat._getTracker("UA-683660-9");
-			pageTracker._trackPageview();
-			} catch(err) {}
-		</script>
-
-		<script>
-			var vglnk_api_key = "ede440244a807302329b32d9ba9492ad";
-			var vglnk_domain = (("https:" == document.location.protocol) ? "https://" : "http://") + "api.viglink.com";
-			document.write(unescape("%3Cscript src='" + vglnk_domain + "/api/vglnk.js?key=" + vglnk_api_key +
-		    "' type='text/javascript'%3E%3C/script%3E"));
-		</script>
-		<script type="text/javascript">
-			try {
-				vglnk(vglnk_domain, vglnk_api_key);
+				var pageTracker = _gat._getTracker("UA-683660-9");
+				pageTracker._trackPageview();
 			} catch(err) {}
 		</script>
 <?php } ?>
