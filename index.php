@@ -28,7 +28,7 @@ function github()
 		<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
 		<link rel="alternate" type="application/rss+xml" title="Luan Almeida (Blog)" href="http://luanlmd.wordpress.com/feed/" /> 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" type="text/javascript"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
 		<script src="js/scripts.js" type="text/javascript"></script>
 	</head>
 	<body>
