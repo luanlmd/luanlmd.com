@@ -38,10 +38,10 @@ function github()
 				<h1 class="grid_24 push_1">Luan Almeida</h1>
 				<section id="links">
 					<ul>
-						<li><a href="http://luanlmd.wordpress.com">Blog</a></li>
 						<li><a href="http://twitter.com/luanlmd">Twitter</a></li>
 						<li><a href="http://github.com/luanlmd">GitHub</a></li>
 						<li><a href="http://sb.luanlmd.com">Sandbox</a></li>
+						<li><a href="http://luanlmd.wordpress.com">Blog</a></li>
 					</ul>
 				</section>
 			</div>
@@ -121,8 +121,9 @@ for($x = 0; $x < 5; $x++)
 			</section>
 			</div>
 		</div>
-		<section id="shared">
+		<section id="bottom">
 			<div class="container_24">
+				<div id="shared" class="grid_18">
 					<a href="http://www.google.com/reader/shared/luanlmd"><h2>Feeds Compartilhados</h2></a>
 					<ul>
 <? $x = 0; foreach (reader() as $i) { $attr = $i->link->attributes(); $x++; if ($x < 15) { ?>
@@ -131,6 +132,17 @@ for($x = 0; $x < 5; $x++)
 						</li>
 	<? } } ?>
 					</ul>
+				</div>
+				<div class="grid_6">
+					<h2>Parceiros</h2>
+					<ul>
+						<li><a href="http://julianeribeiro.com">Juliane Ribeiro</a></li>
+						<li><a href="http://rogeriocarneiro.com.br">Rogério Carneiro</a></li>
+						<li><a href="http://thiagofaleiro.com">Thiago Faleiro</a></li>
+						<li><a href="http://consulteware.com.br">Rodrigo Martins (ConsulteWare)</a></li>
+						<li><a href="http://ferrari.eti.br">Carlos André Ferrari</a></li>
+					</ul>
+				</div>
 			</div>
 		</section>
 		<footer class="container_24">

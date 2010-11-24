@@ -59,7 +59,9 @@ ul { list-style:none; }
 	background:url("images/logo.png") no-repeat;
 }
 
-#top #links ul { position: absolute; margin:120px 0 0 615px; }
+#top #links ul { position: absolute; margin:90px 0 0 615px; }
+
+#top #links ul li { margin:3px; }
 
 #top #links ul li a
 {
@@ -77,12 +79,11 @@ ul { list-style:none; }
 #top #links ul li a
 { 
 	display:block;
-	background:#6A6A6A;
-	border:1px solid #6D6D6D;
+	background:#313F44;
 	font-size:13px;
 	border-bottom: none;
 	border-radius:5px;
-	padding:8px 15px;
+	padding:8px 10px;
 }
 
 #blog
@@ -238,26 +239,36 @@ ul { list-style:none; }
 	padding:5px 15px;
 }
 
-#shared 
+#bottom 
 {
 	clear:both;
 	background:#1e2528;
 	padding:10px 0;
+	height:320px;
 }
 
-#shared h2
+#bottom h2
 {
 	color:#f3f3f3;
-	background:url(images/rss.png) 10px 10px no-repeat;
 	display:block;
 	line-height:60px;
-	padding-left:60px;
 }
 
-#shared li a
+#bottom a
 {
     padding:5px 0;
     line-height:18px;
+}
+
+#bottom #shared h2
+{
+	background:url(images/rss.png) 10px 10px no-repeat;
+	padding-left:60px;
+}
+
+#bottom #shared li a
+{
+
     margin-left:60px;
 }
 
