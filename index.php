@@ -9,11 +9,6 @@ function reader()
 	$xml = new SimpleXMLElement(file_get_contents("/tmp/luanlmd.greader.xml"));
 	return $xml->entry;
 }
-function twitter()
-{
-	$ts = json_decode(file_get_contents("/tmp/luanlmd.twitter.json"));
-	return $ts;
-}
 function github()
 {
 	$xml = new SimpleXMLElement(file_get_contents("/tmp/luanlmd.github.xml"));
@@ -86,22 +81,37 @@ function github()
 				<section id="twitter" class="grid_9">
 					<div class="wrap">
 						<a href="http://twitter.com/luanlmd"><h2>Twitter</h2></a>
-						<ul>
-<?
-$ts = twitter();
-for($x = 0; $x < 5; $x++)
-{                       
-        $t = htmlspecialchars($ts[$x]->text);
-        if($t{0} != "@") {      
-        $t = ereg_replace("(http:\/\/[^ ]+)", " <a rel=\"nofollow\" href=\"\\1\">\\1</a> ", $t);
-        $t = ereg_replace("@([a-zA-Z0-9_]+)", " <a rel=\"nofollow\" href=\"http://twitter.com/\\1\">@\\1</a> ", $t);
-        $t = ereg_replace(" #([^ ]+)", " <a rel=\"nofollow\" href=\"http://search.twitter.com/search?q=%23\\1\">#\\1</a> ", $t);
-?>                                      
-					<li>
-						<p><?= $t ?></p>
-					</li>
-<? } } ?>
-						</ul>
+						<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+						<script>
+						new TWTR.Widget({
+						  version: 2,
+						  type: 'profile',
+						  rpp: 4,
+						  interval: 6000,
+						  width: 'auto',
+						  height: 300,
+						  theme: {
+						    shell: {
+						      background: '#222D31',
+						      color: '#ffffff'
+						    },
+						    tweets: {
+						      background: '#313F44',
+						      color: '#EBEBEB',
+						      links: '#33CCFF'
+						    }
+						  },
+						  features: {
+						    scrollbar: false,
+						    loop: false,
+						    live: false,
+						    hashtags: true,
+						    timestamp: true,
+						    avatars: true,
+						    behavior: 'all'
+						  }
+						}).render().setUser('luanlmd').start();
+						</script>
 					</div>
 				</section>
 				<section id="github" class="grid_9">
