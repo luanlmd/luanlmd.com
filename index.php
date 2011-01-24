@@ -151,6 +151,7 @@ function github()
 						<li><a href="http://thiagofaleiro.com">Thiago Faleiro</a></li>
 						<li><a href="http://consulteware.com.br">Rodrigo Martins (ConsulteWare)</a></li>
 						<li><a href="http://ferrari.eti.br">Carlos André Ferrari</a></li>
+						<li><a href="http://glesio.com">Glesio Paiva</a></li>
 					</ul>
 				</div>
 			</div>
