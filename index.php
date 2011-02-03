@@ -29,7 +29,7 @@ $links['Sandbox'] = 'http://sb.luanlmd.com';
 			<pre>
 <span class="doctype">&lt;!DOCTYPE html&gt;</span>
 &lt;html&gt;
-	&lt;title&gt;Luan Almeida&lt;/title&gt;
+	&lt;title&gt;<span class="text">Luan Almeida</span>&lt;/title&gt;
 	&lt;body&gt;
 		&lt;ul&gt;
 </pre>
