@@ -2,7 +2,7 @@
 $links = array();
 $links['About me'] = 'http://about.me/luanlmd';
 $links['Git Hub'] = 'http://github.com/luanlmd';
-$links['Blog'] = 'http://luanlmd.wordpress.com';
+$links['Blog'] = 'http://blog.luanlmd.com';
 $links['Sandbox'] = 'http://sb.luanlmd.com';
 ?>
 <!DOCTYPE html>
