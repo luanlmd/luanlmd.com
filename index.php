@@ -32,6 +32,7 @@ $links['Work'] = 'http://web.secom.to.gov.br';
 <span class="doctype">&lt;!DOCTYPE html&gt;</span>
 &lt;html&gt;
 	&lt;title&gt;<span class="text">Luan Almeida</span>&lt;/title&gt;
+	&lt;description&gt;<span class="text">Web Developer, PHP + front-end</span>&lt;/description&gt;
 	&lt;body&gt;
 		&lt;ul&gt;
 </pre>
