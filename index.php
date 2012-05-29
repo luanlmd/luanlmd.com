@@ -13,7 +13,7 @@ $links['Work'] = 'http://web.secom.to.gov.br';
 		<title>Luan Almeida</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<style>
-			* { margin:none; border:none; font-size:14px; font-weight:bold; color:#729FCF; }
+			* { margin:none; border:none; font-size:25px; font-weight:bold; color:#729FCF; }
 			a { text-decoration:none; }
 			a:hover { text-decoration:underline; }
 			ul { list-style:none; }
