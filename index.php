@@ -13,16 +13,17 @@ $links['Work'] = 'http://web.secom.to.gov.br';
 		<title>Luan Almeida</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<style>
-			* { margin:none; border:none; font-size:16px; font-weight:bold; color:#729FCF; }
+			body { background: url('background.png') no-repeat #272822; padding-left: 23px; padding-top:17px; }
+			* { margin:none; border:none; font-size:12px; font-weight:normal; color:#F92664; line-height: 15px; }
 			a { text-decoration:none; }
 			a:hover { text-decoration:underline; }
 			ul { list-style:none; }
-			body { background:#2E3436; }
-			.doctype { color:#987FA0; }
-			.html { color:#729FCF; }
-			.text { color:#D3D6C4; }
-			.prop { color:#79E234; }
-			.prop-value, .prop-value a { color:#EDCE0A; }
+			.doctype { color:#E1F8F2; }
+			.html { color:#F92664; }
+			.text { color:#E1F8F2; }
+			.prop { color:#88DB2E; }
+			.bracket { color:#E1F8F2; }
+			.prop-value, .prop-value a { color:#E6DB74; }
 		</style>
 	</head>
 	<body>
@@ -34,20 +35,11 @@ $links['Work'] = 'http://web.secom.to.gov.br';
 	&lt;title&gt;<span class="text">Luan Almeida</span>&lt;/title&gt;
 	&lt;description&gt;<span class="text">Web Developer, PHP + front-end</span>&lt;/description&gt;
 	&lt;body&gt;
-		&lt;ul&gt;
-</pre>
-		<ul>
+		&lt;nav&gt;
 <?php foreach ($links as $k => $v) { ?>
-			<li>
-<pre>
-		<span class="html">&lt;li&gt;&lt;a</span> <span class="prop">href=</spam><span class="prop-value">"<a href="<?php echo $v ?>"><?php echo $v ?></a>"</span><span class="html">&gt;</span><span class="text"><?php echo $k ?></span><span class="html">&lt;/a&gt;&lt;/li&gt;</span>
-</pre>
-			</li>
-
+			<span class="html">&lt;a</span> <span class="prop">href=</span><span class="prop-value">"<a href="<?php echo $v ?>"><?php echo $v ?></a>"</span><span class="html">&gt;</span><span class="text"><?php echo $k ?></span><span class="html">&lt;/a&gt;</span>
 <?php } ?>
-		</ul>
-<pre>
-		&lt;/ul&gt;
+		&lt;/nav&gt;
 	&lt;/body&gt;
 &lt;/html&gt;
 			</pre>
