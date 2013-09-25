@@ -13,7 +13,7 @@ $links['Work'] = 'http://web.secom.to.gov.br';
 		<title>Luan Almeida</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<style>
-			body { background: url('background.png') no-repeat #272822; padding-left: 23px; padding-top:17px; }
+			body { background: url('background.png') no-repeat, #272822; padding-left: 23px; padding-top:17px; padding-top:17px; padding-left: 30px; }
 			* { margin:none; border:none; font-size:12px; font-weight:normal; color:#F92664; line-height: 15px; }
 			a { text-decoration:none; }
 			a:hover { text-decoration:underline; }
@@ -24,6 +24,7 @@ $links['Work'] = 'http://web.secom.to.gov.br';
 			.prop { color:#88DB2E; }
 			.bracket { color:#E1F8F2; }
 			.prop-value, .prop-value a { color:#E6DB74; }
+			#footer { display: block; height: 20px; width: 100%; position: absolute; bottom: 0; left: 0; background:url('footer_left.png') no-repeat left, url('footer_right.png') no-repeat right, url('footer_mid.png'); }
 		</style>
 	</head>
 	<body>
@@ -44,6 +45,7 @@ $links['Work'] = 'http://web.secom.to.gov.br';
 &lt;/html&gt;
 			</pre>
 			</code>
+			<div id="footer"></div>
 		</div>
 <script type="text/javascript">
   var _gaq = _gaq || [];
