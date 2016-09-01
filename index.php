@@ -14,8 +14,11 @@ $links['Work'] = 'http://web.secom.to.gov.br';
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<style>
 			html { height: 100%; }
-			body { 
+			body {
 				background:
+				<?php if (isset($_GET['spiderkull'])) { ?>
+					url('spiderkull.gif') no-repeat top right,
+				<?php } ?>
 					url('background.png') no-repeat,
 					url('footer_left.png') no-repeat bottom left,
 					url('footer_right.png') no-repeat bottom right,
