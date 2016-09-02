@@ -1,4 +1,8 @@
 <?php
+header("Link: <background.png>; rel=preload; as=image", false);
+header("Link: <footer_left.png>; rel=preload; as=image", false);
+header("Link: <footer_right.png>; rel=preload; as=image", false);
+header("Link: <footer_mid.png>; rel=preload; as=image", false);
 $links = array();
 $links['About me'] = 'http://about.me/luanlmd';
 $links['Git Hub'] = 'http://github.com/luanlmd';
