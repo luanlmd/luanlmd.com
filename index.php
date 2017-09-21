@@ -4,12 +4,10 @@ header("Link: <footer_left.png>; rel=preload; as=image", false);
 header("Link: <footer_right.png>; rel=preload; as=image", false);
 header("Link: <footer_mid.png>; rel=preload; as=image", false);
 $links = array();
-$links['About me'] = 'http://about.me/luanlmd';
-$links['Git Hub'] = 'http://github.com/luanlmd';
-$links['Blog'] = 'http://luanlmd.blogspot.com';
-$links['Youtube'] = 'http://youtube.com/luanlmd';
-$links['Sandbox'] = 'http://sb.luanlmd.com';
-$links['Work'] = 'http://web.secom.to.gov.br';
+$links['Git Hub :)'] = 'http://github.com/luanlmd';
+$links['Youtube o.O'] = 'http://youtube.com/luanlmd';
+$links['Sandbox _O/'] = 'http://sb.luanlmd.com';
+$links['Work ;]'] = 'http://web.secom.to.gov.br';
 ?>
 <!DOCTYPE html>
 <html>
