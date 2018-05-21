@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  web:
+    image: luanlmd/luanlmd.com
+    ports:
+      - 4001:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/sites-enabled/default
+      - .:/app
+    restart: always
