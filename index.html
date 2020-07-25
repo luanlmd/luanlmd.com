@@ -1,14 +1,3 @@
-<?php
-header("Link: <background.png>; rel=preload; as=image", false);
-header("Link: <footer_left.png>; rel=preload; as=image", false);
-header("Link: <footer_right.png>; rel=preload; as=image", false);
-header("Link: <footer_mid.png>; rel=preload; as=image", false);
-$links = array();
-$links['Git Hub :)'] = 'http://github.com/luanlmd';
-$links['Youtube o.O'] = 'http://youtube.com/luanlmd';
-$links['Sandbox _O/'] = 'http://sb.luanlmd.com';
-$links['Work ;]'] = 'http://web.secom.to.gov.br';
-?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -18,9 +7,7 @@ $links['Work ;]'] = 'http://web.secom.to.gov.br';
 			html { height: 100%; }
 			body {
 				background:
-				<?php if (isset($_GET['spiderkull'])) { ?>
 					url('spiderkull.gif') no-repeat top right,
-				<?php } ?>
 					url('background.png') no-repeat,
 					url('footer_left.png') no-repeat bottom left,
 					url('footer_right.png') no-repeat bottom right,
@@ -47,12 +34,13 @@ $links['Work ;]'] = 'http://web.secom.to.gov.br';
 <span class="doctype">&lt;!DOCTYPE html&gt;</span>
 &lt;html&gt;
 	&lt;title&gt;<span class="text">Luan Almeida</span>&lt;/title&gt;
-	&lt;description&gt;<span class="text">Web Developer, PHP + front-end</span>&lt;/description&gt;
+	&lt;description&gt;<span class="text">Web Developer, NodeJS, PHP, React, AWS and Stuff</span>&lt;/description&gt;
 	&lt;body&gt;
 		&lt;nav&gt;
-<?php foreach ($links as $k => $v) { ?>
-			<span class="html">&lt;a</span> <span class="prop">href=</span><span class="prop-value">"<a href="<?php echo $v ?>"><?php echo $v ?></a>"</span><span class="html">&gt;</span><span class="text"><?php echo $k ?></span><span class="html">&lt;/a&gt;</span>
-<?php } ?>
+			<span class="html">&lt;a</span> <span class="prop">href=</span><span class="prop-value">"<a href="https://github.com/luanlmd">Git Hub :)</a>"</span><span class="html">&gt;</span><span class="text"><?php echo $k ?></span><span class="html">&lt;/a&gt;</span>
+			<span class="html">&lt;a</span> <span class="prop">href=</span><span class="prop-value">"<a href="https://youtube.com/luanlmd">Youtube o.O</a>"</span><span class="html">&gt;</span><span class="text"><?php echo $k ?></span><span class="html">&lt;/a&gt;</span>
+			<span class="html">&lt;a</span> <span class="prop">href=</span><span class="prop-value">"<a href="https://twitter.com/luanlmd">Twitter -.-</a>"</span><span class="html">&gt;</span><span class="text"><?php echo $k ?></span><span class="html">&lt;/a&gt;</span>
+			<span class="html">&lt;a</span> <span class="prop">href=</span><span class="prop-value">"<a href="https://eduzz.com">Work ;]</a>"</span><span class="html">&gt;</span><span class="text"><?php echo $k ?></span><span class="html">&lt;/a&gt;</span>
 		&lt;/nav&gt;
 	&lt;/body&gt;
 &lt;/html&gt;
