@@ -21,7 +21,7 @@ jobs:
       - name: Configure Docker Client
         run: |-
           gcloud auth configure-docker --quiet
-          gcloud auth configure-docker us-west2-docker.pkg.dev --quiet
+          gcloud auth configure-docker southamerica-east1-docker.pkg.dev --quiet
 
       - name: Docker Push
         run: docker push luanlmd_com:latest
