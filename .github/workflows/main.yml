@@ -33,5 +33,6 @@ jobs:
       - name: Update Cloud Run Service
         uses: 'google-github-actions/deploy-cloudrun@v1'
         with:
+          region: us-east1
           service: 'luanlmd'
           image: 'southamerica-east1-docker.pkg.dev/luanlmd-384622/luanlmd/luanlmd:v${{ github.run_number }}'
