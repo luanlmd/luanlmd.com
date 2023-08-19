@@ -11,6 +11,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Docker Build
+        run: docker build . -f docker/prod.Dockerfile -t luanlmd_com
+
       - uses: google-github-actions/auth@v1
         with:
           credentials_json: ${{ secrets.SERVICE_ACCOUNT_KEY }}
@@ -19,8 +22,16 @@ jobs:
         run: |-
           gcloud auth configure-docker --quiet
           gcloud auth configure-docker southamerica-east1-docker.pkg.dev --quiet
-
-      - name: Docker Build
+      
+      - name: Docker Tag and Push
         run: |-
-          docker build . -f docker/prod.Dockerfile -t southamerica-east1-docker.pkg.dev/luanlmd-384622/luanlmd/luanlmd:latest
+          docker tag luanlmd_com southamerica-east1-docker.pkg.dev/luanlmd-384622/luanlmd/luanlmd:latest
+          docker tag luanlmd_com southamerica-east1-docker.pkg.dev/luanlmd-384622/luanlmd/luanlmd:v${{ github.run_number }}}
           docker push southamerica-east1-docker.pkg.dev/luanlmd-384622/luanlmd/luanlmd:latest
+          docker push southamerica-east1-docker.pkg.dev/luanlmd-384622/luanlmd/luanlmd:v${{ github.run_number }}}
+    
+      - name: Update Cloud Run Service
+        uses: 'google-github-actions/deploy-cloudrun@v1'
+        with:
+          service: 'luanlmd'
+          image: 'southamerica-east1-docker.pkg.dev/luanlmd-384622/luanlmd/luanlmd:v${{ github.run_number }}}'
