@@ -11,9 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Docker Build
-        run: docker build . -f docker/prod.Dockerfile -t luanlmd_com:latest
-
       - uses: google-github-actions/auth@v1
         with:
           credentials_json: ${{ secrets.SERVICE_ACCOUNT_KEY }}
@@ -23,5 +20,7 @@ jobs:
           gcloud auth configure-docker --quiet
           gcloud auth configure-docker southamerica-east1-docker.pkg.dev --quiet
 
-      - name: Docker Push
-        run: docker push luanlmd_com:latest
+      - name: Docker Build
+        run: |-
+          docker build . -f docker/prod.Dockerfile -t southamerica-east1-docker.pkg.dev/$PROJECT_ID/images/luanlmd:latest
+          docker push southamerica-east1-docker.pkg.dev/$PROJECT_ID/images/luanlmd:latest
