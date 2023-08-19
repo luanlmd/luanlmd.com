@@ -14,11 +14,9 @@ jobs:
       - name: Docker Build
         run: docker build . -f docker/prod.Dockerfile -t luanlmd_com:latest
 
-      - uses: google-github-actions/setup-gcloud@master
+      - uses: google-github-actions/auth@v1
         with:
-          service_account_key: ${{ secrets.SERVICE_ACCOUNT_KEY }}
-          project_id: ${{ env.PROJECT_ID }}
-          export_default_credentials: true
+          credentials_json: ${{ secrets.SERVICE_ACCOUNT_KEY }}
 
       - name: Configure Docker Client
         run: |-
