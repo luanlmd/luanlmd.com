@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  playlist:
+    ports:
+      - "8000:8000"
+    build:
+      dockerfile: docker/dev.Dockerfile
+      context: .
+    volumes:
+      - ./src/:/src

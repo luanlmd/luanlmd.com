@@ -1,0 +1,7 @@
+{
+    "tasks": {
+        "start": "deno run -A --watch index.ts",
+        "cache": "deno cache index.ts",
+        "run": "deno run -A index.ts"
+    }
+}
