@@ -22,5 +22,5 @@ jobs:
 
       - name: Docker Build
         run: |-
-          docker build . -f docker/prod.Dockerfile -t southamerica-east1-docker.pkg.dev/$PROJECT_ID/images/luanlmd:latest
-          docker push southamerica-east1-docker.pkg.dev/$PROJECT_ID/images/luanlmd:latest
+          docker build . -f docker/prod.Dockerfile -t southamerica-east1-docker.pkg.dev/${{ env.PROJECT_ID }}/images/luanlmd:latest
+          docker push southamerica-east1-docker.pkg.dev/${{ env.PROJECT_ID }}/images/luanlmd:latest
