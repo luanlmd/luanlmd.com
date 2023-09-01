@@ -6,8 +6,8 @@
 		<style>
 			html { height: 100%; }
 			body {
+				height: 100%;
 				background:
-					url('spiderkull.gif') no-repeat top right,
 					url('background.png') no-repeat,
 					url('footer_left.png') no-repeat bottom left,
 					url('footer_right.png') no-repeat bottom right,
@@ -27,10 +27,12 @@
 			.bracket { color:#E1F8F2; }
 			.prop-value, .prop-value a { color:#E6DB74; }
 			span.tab { display:inline-block; width:2em; }
+
+			#spiderkull { background-image:url('spiderkull.gif'); top: 0; right: 20px; position:absolute; width: 200px; height: 200px; display: none; }
 		</style>
 	</head>
 	<body>
-
+		<div id="spiderkull"></div>
 		<div>
 			<code>
 
@@ -54,6 +56,11 @@
 			</code>
 		</div>
 
+		<script>
+			document.body.addEventListener('click', () => {
+				document.querySelector('#spiderkull').style.display = 'block';
+			});
+		</script>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-683660-9"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
