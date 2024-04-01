@@ -1,7 +1,10 @@
 {
-    "tasks": {
-        "start": "deno run -A --watch index.ts",
-        "cache": "deno cache index.ts",
-        "run": "deno run -A index.ts"
-    }
+  "tasks": {
+    "start": "deno run -A --watch index.ts",
+    "cache": "deno cache index.ts",
+    "run": "deno run -A index.ts"
+  },
+  "imports": {
+    "@std/http": "jsr:@std/http@^0.221.0"
+  }
 }
